@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Carlos Narvaez | Embedded Systems Engineer, Toronto</title>
+  <meta name="description" content="Thirteen embedded systems projects by Carlos Narvaez: lunar rover electronics, mmWave collision avoidance, moisture-sensing fleets, wearable PCBs, telescope instrumentation, and veterinary EKG systems — all documented with real photos.">
+  <meta name="author" content="Carlos Narvaez">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Carlos Narvaez, Embedded Systems Engineer">
+  <meta property="og:description" content="A decade of embedded hardware, firmware, and instrumentation projects with real build photos.">
+  <meta property="og:image" content="assets/img/projects/pebble/rover.jpg">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="assets/img/logo-small.png" alt="Rabbit Systems logo">
+      <span>Carlos Narvaez</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="btn btn-primary" href="assets/resume/Carlos-Narvaez-Resume.pdf" download>Resume PDF</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="section-kicker">portfolio — 2014 to today</div>
+    <h1>Thirteen projects, one habit: shipping working hardware.</h1>
+    <p>
+      Every entry below is a real system I designed, built, debugged, or repaired — documented with photos
+      from the bench, the lab, and the field. Newest first. Use the filters to browse by discipline.
+    </p>
+  </div>
+</header>
+
+<main class="container" style="padding-bottom: 80px;">
+
+  <div class="filters">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="firmware">Firmware</button>
+    <button class="chip" data-filter="hardware">PCB &amp; Hardware</button>
+    <button class="chip" data-filter="instrumentation">Instrumentation &amp; Sensing</button>
+    <button class="chip" data-filter="bioelectronics">Bioelectronics</button>
+    <button class="chip" data-filter="robotics">Robotics &amp; Autonomous</button>
+  </div>
+
+  <!-- 1. Pebble -->
+  <article class="project reveal" id="pebble" data-cats="robotics hardware firmware">
+    <div class="project-head">
+      <h2>Project Pebble — Autonomous Lunar Mining Rover</h2>
+      <span class="project-meta">May 2026 — Present</span>
+    </div>
+    <div class="project-company">Moon Trades</div>
+    <p>
+      I contribute to the development of Pebble, an autonomous lunar mining rover currently under active
+      development. My role focuses on embedded systems engineering: electronics integration, sensor
+      interfacing, firmware development, and system validation to support reliable operation in a robotic
+      exploration platform.
+    </p>
+    <p>
+      The project involves rapid prototyping, hardware bring-up, and the integration of multiple subsystems,
+      with an emphasis on modularity, reliability, and a scalable system architecture. As the project is
+      ongoing, additional technical details remain confidential, with more to share upon public release.
+    </p>
+    <div class="tags"><span class="tag">KiCad</span><span class="tag">Control Systems</span><span class="tag">BOM Management</span><span class="tag">Sensor Integration</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/pebble/rover.jpg"><img src="assets/img/projects/pebble/rover-thumb.jpg" alt="Pebble lunar mining rover prototype chassis during development."></a>
+      <a href="assets/img/projects/pebble/team.jpg"><img src="assets/img/projects/pebble/team-thumb.jpg" alt="The Pebble rover engineering team at work."></a>
+    </div>
+  </article>
+
+  <!-- 2. Peltier -->
+  <article class="project reveal" id="peltier" data-cats="hardware firmware">
+    <div class="project-head">
+      <h2>Peltier Controller for Water Cooling</h2>
+      <span class="project-meta">May 2026 — Present</span>
+    </div>
+    <div class="project-company">Robbie Insurtech</div>
+    <p>
+      A proof-of-concept thermoelectric cooling system to evaluate the feasibility of using a Peltier module
+      for active water cooling in a compact forced-air application — an engineering exploration of thermal
+      management techniques, control strategies, and system efficiency for future embedded cooling solutions.
+    </p>
+    <p>
+      I designed the complete electronic control system: a custom power stage driving a high-current Peltier
+      module, embedded firmware for temperature regulation, and a PWM-based control algorithm that optimizes
+      cooling performance while minimizing power consumption. The prototype integrates temperature sensors, a
+      water circulation loop, heat sinks, and forced-air cooling to characterize thermal behavior under
+      different operating conditions.
+    </p>
+    <p>
+      I assembled the prototype electronics, performed hardware validation, evaluated control strategies, and
+      collected experimental data on cooling efficiency, response time, and overall performance — quickly
+      turning an idea into a functional prototype through systematic engineering exploration.
+    </p>
+    <div class="tags"><span class="tag">Peltier Modules</span><span class="tag">Power Electronics</span><span class="tag">PWM Control</span><span class="tag">Hardware Troubleshooting</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/peltier/peltier-prototype.jpg"><img src="assets/img/projects/peltier/peltier-prototype-thumb.jpg" alt="Peltier thermoelectric water-cooling controller prototype with power stage and sensors."></a>
+    </div>
+  </article>
+
+  <!-- 3. Robbie 3.0 -->
+  <article class="project reveal" id="robbie3" data-cats="hardware firmware instrumentation">
+    <div class="project-head">
+      <h2>Robbie 3.0 — Fleet Electronics Upgrade</h2>
+      <span class="project-meta">May 2026 — Present</span>
+    </div>
+    <div class="project-company">Robbie Insurtech</div>
+    <p>
+      Robbie 3.0 is the latest generation of an autonomous fleet of sensing and control devices for long-term
+      environmental monitoring. The project upgrades the existing platform with a new moisture-sensing system
+      while improving the hardware architecture, firmware, and overall reliability.
+    </p>
+    <p>
+      I designed and developed new PCBs for the Robbie 3.0 platform, integrated and validated the new moisture
+      sensor, developed embedded firmware, and completed full system integration. I also designed and
+      documented custom wire harnesses and interconnects to improve manufacturability, serviceability, and
+      field reliability, then performed hardware bring-up, PCB validation, debugging, calibration, and field
+      testing to ensure compatibility with the existing fleet.
+    </p>
+    <p>
+      I additionally implemented AI-assisted engineering workflows to generate and manage SmartBOMs —
+      streamlining component selection, BOM management, documentation, and design validation while keeping
+      engineering oversight throughout the project lifecycle.
+    </p>
+    <div class="tags"><span class="tag">KiCad</span><span class="tag">PCB Design</span><span class="tag">Wire Harnesses</span><span class="tag">Analog Signal Conditioning</span><span class="tag">Git</span><span class="tag">BOM Management</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/robbie3/installing-and-testing.jpg"><img src="assets/img/projects/robbie3/installing-and-testing-thumb.jpg" alt="Installing and testing the upgraded Robbie 3.0 electronics in the field."></a>
+      <a href="assets/img/projects/robbie3/testing-sensor.jpg"><img src="assets/img/projects/robbie3/testing-sensor-thumb.jpg" alt="Bench-testing the new moisture sensor for the Robbie 3.0 platform."></a>
+    </div>
+  </article>
+
+  <!-- 4. D4D -->
+  <article class="project reveal" id="d4d" data-cats="firmware instrumentation hardware">
+    <div class="project-head">
+      <h2>D4D Moisture Sensor — Firmware Development &amp; Troubleshooting</h2>
+      <span class="project-meta">Oct 2025 — May 2026</span>
+    </div>
+    <div class="project-company">Robbie Insurtech</div>
+    <p>
+      Firmware troubleshooting, correction, and ongoing development for a third-party D4D material moisture
+      sensor, covering both the electronic and mechanical sides of the system. I analyzed existing firmware
+      behavior, identified functional issues through experimental testing, and implemented corrective updates
+      and enhancements.
+    </p>
+    <p>
+      Development was done in embedded C on an STM32 microcontroller: code refactoring, firmware upgrades,
+      long-term maintainability improvements, and technical documentation. The sensor uses I²C together with
+      an analog front-end that measures resistance to infer moisture content in solid materials.
+      Troubleshooting included validating I²C transactions, ADC measurements, timing behavior, and signal
+      integrity across the analog measurement stage.
+    </p>
+    <p>
+      I also designed a custom mechanical enclosure in Onshape focused on sensor protection, usability, and
+      manufacturability, providing proper integration of the sensor, PCB, and connectors for reliable field
+      operation.
+    </p>
+    <div class="tags"><span class="tag">STM32</span><span class="tag">Embedded C</span><span class="tag">I2C</span><span class="tag">Analog Front-End</span><span class="tag">Onshape</span><span class="tag">Git</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/d4d/pcb.jpg"><img src="assets/img/projects/d4d/pcb-thumb.jpg" alt="D4D moisture sensor PCB on the bench."></a>
+      <a href="assets/img/projects/d4d/renderized-pcb.jpg"><img src="assets/img/projects/d4d/renderized-pcb-thumb.jpg" alt="3D render of the D4D moisture sensor PCB."></a>
+      <a href="assets/img/projects/d4d/case-d4d.jpg"><img src="assets/img/projects/d4d/case-d4d-thumb.jpg" alt="Custom mechanical enclosure designed in Onshape for the D4D sensor."></a>
+      <a href="assets/img/projects/d4d/pcb-firmware-uploading-troubleshooting.jpg"><img src="assets/img/projects/d4d/pcb-firmware-uploading-troubleshooting-thumb.jpg" alt="Troubleshooting firmware uploading on the D4D sensor PCB."></a>
+      <a href="assets/img/projects/d4d/resoldering-mcu.jpg"><img src="assets/img/projects/d4d/resoldering-mcu-thumb.jpg" alt="Resoldering the STM32 microcontroller under magnification."></a>
+      <a href="assets/img/projects/d4d/resoldering-the-mcu.jpg"><img src="assets/img/projects/d4d/resoldering-the-mcu-thumb.jpg" alt="SMD rework of the microcontroller on the D4D board."></a>
+      <a href="assets/img/projects/d4d/rework.jpg"><img src="assets/img/projects/d4d/rework-thumb.jpg" alt="PCB rework station during D4D board repair."></a>
+      <a href="assets/img/projects/d4d/serial-quick-tester-esp32.jpg"><img src="assets/img/projects/d4d/serial-quick-tester-esp32-thumb.jpg" alt="ESP32-based serial quick tester used to validate the D4D sensor."></a>
+    </div>
+  </article>
+
+  <!-- 5. Wearable -->
+  <article class="project reveal" id="wearable" data-cats="hardware bioelectronics firmware">
+    <div class="project-head">
+      <h2>Multi-Module PCB for a Wearable Device</h2>
+      <span class="project-meta">Oct 2025 — Apr 2026</span>
+    </div>
+    <div class="project-company">Morphace</div>
+    <p>
+      Designed a modular PCB architecture in KiCad and developed C++ firmware to manage sensor acquisition,
+      power control, and inter-module communication for a wearable skin-health device. The work included
+      analog circuit design for the sensing front-end, BOM management, and hands-on bring-up and connector
+      validation of the assembled boards.
+    </p>
+    <div class="tags"><span class="tag">KiCad</span><span class="tag">C++</span><span class="tag">ESP32</span><span class="tag">Analog Circuit Design</span><span class="tag">BOM Management</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/wearable/pcb.jpg"><img src="assets/img/projects/wearable/pcb-thumb.jpg" alt="Multi-module wearable device PCB, assembled."></a>
+      <a href="assets/img/projects/wearable/pcb-ready.jpg"><img src="assets/img/projects/wearable/pcb-ready-thumb.jpg" alt="Finished wearable PCB ready for integration."></a>
+      <a href="assets/img/projects/wearable/unboxing.jpg"><img src="assets/img/projects/wearable/unboxing-thumb.jpg" alt="Unboxing the first fabricated batch of wearable PCBs."></a>
+      <a href="assets/img/projects/wearable/first-quick-test.jpg"><img src="assets/img/projects/wearable/first-quick-test-thumb.jpg" alt="First power-on quick test of the wearable board."></a>
+      <a href="assets/img/projects/wearable/testing-connectors.jpg"><img src="assets/img/projects/wearable/testing-connectors-thumb.jpg" alt="Testing inter-module connectors on the wearable PCB."></a>
+    </div>
+  </article>
+
+  <!-- 6. Moisture tester -->
+  <article class="project reveal" id="moisture-tester" data-cats="instrumentation firmware">
+    <div class="project-head">
+      <h2>Moisture Sensor Tester &amp; Data Logger for Real-World Conditions</h2>
+      <span class="project-meta">Aug 2025 — Dec 2025</span>
+    </div>
+    <div class="project-company">Robbie Insurtech</div>
+    <p>
+      A moisture-sensor testing and data-logging platform for real-world operating conditions, integrating a
+      Raspberry Pi 5, a custom I²C-based D4D material moisture sensor, and a professional FLIR Systems
+      moisture data logger for comparative validation.
+    </p>
+    <p>
+      The rig was tested at VentureLab in Markham, Ontario, inside an environmental chamber under controlled
+      temperature, enabling repeatable, synchronized measurements across both sensors. Data acquisition and
+      logging were implemented in Python using multithreading with mutex-based synchronization to coordinate
+      sensor polling, align timestamps, and guarantee thread-safe access to shared data.
+    </p>
+    <p>
+      To read the FLIR reference instrument, the team built a camera-based capture workflow with a custom OCR
+      post-processing algorithm that extracts numerical readings from the captured images. All measurement
+      data was time-aligned, stored, and post-processed in a Python analysis pipeline — visualization plus
+      comparative analysis of sensor accuracy, stability, and correlation against the reference instrument.
+    </p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Raspberry Pi 5</span><span class="tag">Embedded Linux</span><span class="tag">STM32</span><span class="tag">Multithreading</span><span class="tag">I2C</span><span class="tag">OCR</span><span class="tag">Data Analysis</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/moisture-tester/temperature-chamber-tester.jpg"><img src="assets/img/projects/moisture-tester/temperature-chamber-tester-thumb.jpg" alt="Test rig inside the environmental temperature chamber at VentureLab."></a>
+      <a href="assets/img/projects/moisture-tester/testing-dataloger.jpg"><img src="assets/img/projects/moisture-tester/testing-dataloger-thumb.jpg" alt="Testing the data logger platform on the bench."></a>
+      <a href="assets/img/projects/moisture-tester/datalogger-interface.jpg"><img src="assets/img/projects/moisture-tester/datalogger-interface-thumb.jpg" alt="Data logger user interface showing live sensor readings."></a>
+      <a href="assets/img/projects/moisture-tester/benchmarketing-instrument.jpg"><img src="assets/img/projects/moisture-tester/benchmarketing-instrument-thumb.jpg" alt="Benchmarking against the FLIR professional moisture instrument."></a>
+      <a href="assets/img/projects/moisture-tester/resistance-industrial-decade.jpg"><img src="assets/img/projects/moisture-tester/resistance-industrial-decade-thumb.jpg" alt="Industrial resistance decade box used for sensor calibration."></a>
+      <a href="assets/img/projects/moisture-tester/drywall-moisture.jpg"><img src="assets/img/projects/moisture-tester/drywall-moisture-thumb.jpg" alt="Measuring drywall moisture content during validation."></a>
+      <a href="assets/img/projects/moisture-tester/temperature-camera.jpg"><img src="assets/img/projects/moisture-tester/temperature-camera-thumb.jpg" alt="Thermal camera view of the sensor under test."></a>
+      <a href="assets/img/projects/moisture-tester/testing-on-heat-camera.jpg"><img src="assets/img/projects/moisture-tester/testing-on-heat-camera-thumb.jpg" alt="Heat camera testing session for the moisture tester."></a>
+    </div>
+  </article>
+
+  <!-- 7. CLI STM32 -->
+  <article class="project reveal" id="cli-stm32" data-cats="firmware">
+    <div class="project-head">
+      <h2>Command Line Interface for Embedded C on STM32 MCUs</h2>
+      <span class="project-meta">Feb 2025 — Mar 2025</span>
+    </div>
+    <div class="project-company">Rabbit Systems</div>
+    <p>
+      A software library that creates a Command Line Interface (CLI) for STM32 and other embedded C
+      microcontrollers. The library handles complete commands with arguments over any of the MCU's
+      communication peripherals — UART, I²C, SPI, CAN, and more. Where those interfaces normally move only
+      raw bytes, this library lets you define professional, structured commands for exchanging data across a
+      distributed system.
+    </p>
+    <div class="tags"><span class="tag">Embedded C</span><span class="tag">STM32</span><span class="tag">UART</span><span class="tag">CAN</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/cli-stm32/stm32-nucleo-for-testing.jpg"><img src="assets/img/projects/cli-stm32/stm32-nucleo-for-testing-thumb.jpg" alt="STM32 Nucleo development board used to test the CLI library."></a>
+    </div>
+  </article>
+
+  <!-- 8. CAS -->
+  <article class="project reveal" id="cas" data-cats="robotics instrumentation firmware">
+    <div class="project-head">
+      <h2>Collision Avoidance System (CAS) for Racing Cars</h2>
+      <span class="project-meta">Apr 2024 — Aug 2024</span>
+    </div>
+    <div class="project-company">Rabbit Systems · for Racing Sciences Inc.</div>
+    <p>
+      Racing cars need fast, reliable detection of nearby cars — at race speeds, side mirrors alone are not
+      enough. Starting from a benchmark of a Bosch device, I designed and implemented a collision detection
+      and avoidance prototype for racing applications.
+    </p>
+    <p>
+      The system integrates two Texas Instruments mmWave radar boards (AWR2944EVM) covering the blind spots
+      and a bumper camera watching directly behind the vehicle, all connected over USB to an NVIDIA Jetson
+      Nano Orin. The radars and camera stream data simultaneously using a multithreaded pipeline. The
+      prototype was developed for Racing Sciences Inc. and tested on the bench, on the street, and mounted on
+      the car.
+    </p>
+    <div class="tags"><span class="tag">mmWave Radar</span><span class="tag">AWR2944EVM</span><span class="tag">NVIDIA Jetson</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">Multithreading</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/cas/final-prototype.jpg"><img src="assets/img/projects/cas/final-prototype-thumb.jpg" alt="Final collision avoidance system prototype with radar boards and Jetson."></a>
+      <a href="assets/img/projects/cas/car-mount-1.jpg"><img src="assets/img/projects/cas/car-mount-1-thumb.jpg" alt="Radar module mounted on the race car."></a>
+      <a href="assets/img/projects/cas/car-test.jpg"><img src="assets/img/projects/cas/car-test-thumb.jpg" alt="On-car testing of the collision avoidance system."></a>
+      <a href="assets/img/projects/cas/testing-of-street.jpg"><img src="assets/img/projects/cas/testing-of-street-thumb.jpg" alt="Street testing of radar detection range."></a>
+      <a href="assets/img/projects/cas/testing-on-lab.jpg"><img src="assets/img/projects/cas/testing-on-lab-thumb.jpg" alt="Laboratory testing of the mmWave radar sensors."></a>
+      <a href="assets/img/projects/cas/testing-software.jpg"><img src="assets/img/projects/cas/testing-software-thumb.jpg" alt="Radar visualization software during testing."></a>
+      <a href="assets/img/projects/cas/debugging-errors.jpg"><img src="assets/img/projects/cas/debugging-errors-thumb.jpg" alt="Debugging session on the CAS data pipeline."></a>
+      <a href="assets/img/projects/cas/laboratory.jpg"><img src="assets/img/projects/cas/laboratory-thumb.jpg" alt="CAS development bench in the laboratory."></a>
+    </div>
+  </article>
+
+  <!-- 9. TRIAXYS -->
+  <article class="project reveal" id="triaxys" data-cats="firmware instrumentation">
+    <div class="project-head">
+      <h2>TRIAXYS Wave Sensor Simulator Firmware</h2>
+      <span class="project-meta">Nov 2023 — Mar 2024</span>
+    </div>
+    <div class="project-company">Minard</div>
+    <p>
+      A firmware repository that simulates the data stream of a TRIAXYS wave sensor, developed in remote
+      collaboration with Ocean Data Systems in Cancun, Mexico. The simulator reproduces a complete data frame
+      from a real TRIAXYS sensor so that a datalogger integrated with the sensor can be tested without the
+      real hardware. Because the actual sensor was fixed to a remote buoy, in-situ testing was impractical —
+      the simulator made remote, repeatable testing of the datalogger possible.
+    </p>
+    <div class="tags"><span class="tag">C++</span><span class="tag">ESP32</span><span class="tag">ATMega</span><span class="tag">Serial Protocols</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/triaxys/buoy.jpg"><img src="assets/img/projects/triaxys/buoy-thumb.jpg" alt="The remote ocean buoy carrying the real TRIAXYS wave sensor."></a>
+      <a href="assets/img/projects/triaxys/test-on-lab.jpg"><img src="assets/img/projects/triaxys/test-on-lab-thumb.jpg" alt="Lab testing of the TRIAXYS simulator firmware."></a>
+      <a href="assets/img/projects/triaxys/repo.jpg"><img src="assets/img/projects/triaxys/repo-thumb.jpg" alt="The simulator firmware repository and documentation."></a>
+    </div>
+  </article>
+
+  <!-- 10. CLI C++ -->
+  <article class="project reveal" id="cli-cpp" data-cats="firmware">
+    <div class="project-head">
+      <h2>Command Line Interface (CLI) Library for C++ Microcontrollers</h2>
+      <span class="project-meta">Apr 2023 — Oct 2023</span>
+    </div>
+    <div class="project-company">Minard</div>
+    <p>
+      A complete library for implementing a CLI on C++-based MCUs with 16-bit architectures. A buffer
+      separates the command name from its arguments; a superclass called <code>Command</code> maintains the
+      buffer and a vector of the commands available throughout program execution. Each command can be linked
+      to an MCU function or process for setting parameters and retrieving values.
+    </p>
+    <p>
+      The library works with any communication interface — Serial, I²C, SPI, CAN, Modbus, and more. As each
+      character arrives, it is added to the parser; when two command-terminator characters are received, the
+      command and its arguments are separated and dispatched. Command names can follow NMEA and ANSI
+      conventions, enabling professional command sets for any embedded system.
+    </p>
+    <div class="tags"><span class="tag">C++</span><span class="tag">ESP32</span><span class="tag">Atmel AVR</span><span class="tag">Software Architecture</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/cli-cpp/class-diagramm.jpg"><img src="assets/img/projects/cli-cpp/class-diagramm-thumb.jpg" alt="Class diagram of the CLI library architecture."></a>
+      <a href="assets/img/projects/cli-cpp/buffer-schema.jpg"><img src="assets/img/projects/cli-cpp/buffer-schema-thumb.jpg" alt="Buffer schema showing command and argument separation."></a>
+      <a href="assets/img/projects/cli-cpp/cli-implementation.jpg"><img src="assets/img/projects/cli-cpp/cli-implementation-thumb.jpg" alt="Example CLI implementation running on a microcontroller."></a>
+    </div>
+  </article>
+
+  <!-- 11. Maritime logger -->
+  <article class="project reveal" id="maritime-logger" data-cats="instrumentation hardware">
+    <div class="project-head">
+      <h2>Data Logger Prototype for Maritime Deep-Sensing</h2>
+      <span class="project-meta">2021 — 2023</span>
+    </div>
+    <div class="project-company">Minard</div>
+    <p>
+      A data logger system prototype for maritime deep-sensing applications, built to record the conductivity
+      of seawater at depth. I developed the acquisition electronics and firmware, brought the board up on the
+      bench, and paired the logger with a Java desktop interface for configuring the device and reviewing the
+      captured data.
+    </p>
+    <div class="tags"><span class="tag">Instrumentation</span><span class="tag">Data Logging</span><span class="tag">Java GUI</span><span class="tag">Hardware Bring-Up</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/maritime-logger/datalogger.jpg"><img src="assets/img/projects/maritime-logger/datalogger-thumb.jpg" alt="Maritime deep-sensing data logger prototype."></a>
+      <a href="assets/img/projects/maritime-logger/board.jpg"><img src="assets/img/projects/maritime-logger/board-thumb.jpg" alt="Data logger acquisition board."></a>
+      <a href="assets/img/projects/maritime-logger/first-testing-and-troubleshooting.jpg"><img src="assets/img/projects/maritime-logger/first-testing-and-troubleshooting-thumb.jpg" alt="First bench testing and troubleshooting of the logger."></a>
+      <a href="assets/img/projects/maritime-logger/java-interface.jpg"><img src="assets/img/projects/maritime-logger/java-interface-thumb.jpg" alt="Java desktop interface for the data logger."></a>
+    </div>
+  </article>
+
+  <!-- 12. Telescope -->
+  <article class="project reveal" id="telescope" data-cats="instrumentation firmware">
+    <div class="project-head">
+      <h2>Weather Station for Astronomical Telescope Domes</h2>
+      <span class="project-meta">May 2019 — Dec 2019</span>
+    </div>
+    <div class="project-company">National Autonomous University of Mexico (UNAM)</div>
+    <p>
+      A device for measuring temperature, pressure, humidity, and wind inside two-meter telescope domes. The
+      system integrates an Aimotek anemometer, a BeagleBone Black embedded computer running Debian Linux, and
+      a relay board. The BeagleBone reads and programs the anemometer, then publishes all measurements to an
+      MQTT server in the main telescope control system.
+    </p>
+    <p>
+      To control the anemometer, the relay board emulates the user's keypad presses — so the whole instrument
+      can be started and reprogrammed remotely from the telescope control room. The device was installed in
+      the main telescope housing.
+    </p>
+    <div class="tags"><span class="tag">Embedded Linux</span><span class="tag">BeagleBone Black</span><span class="tag">Python</span><span class="tag">MQTT</span><span class="tag">PCB Design</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/telescope/finished-electronics.jpg"><img src="assets/img/projects/telescope/finished-electronics-thumb.jpg" alt="Finished electronics of the dome weather station."></a>
+      <a href="assets/img/projects/telescope/mounted-instrument.jpg"><img src="assets/img/projects/telescope/mounted-instrument-thumb.jpg" alt="The weather instrument mounted in the telescope dome."></a>
+      <a href="assets/img/projects/telescope/telescope-mounting.jpg"><img src="assets/img/projects/telescope/telescope-mounting-thumb.jpg" alt="Installing the instrument in the two-meter telescope housing."></a>
+    </div>
+  </article>
+
+  <!-- 13. EKG -->
+  <article class="project reveal" id="ekg" data-cats="bioelectronics hardware firmware">
+    <div class="project-head">
+      <h2>Reliable, Low-Power EKG System for Veterinary Use</h2>
+      <span class="project-meta">Nov 2014 — May 2015</span>
+    </div>
+    <div class="project-company">Autonomous University of San Luis Potosi (UASLP)</div>
+    <p>
+      During my master's degree in Bioelectronics I was tasked with creating a reliable, low-energy EKG
+      system. I built a complete analog signal-acquisition chain for human and animal EKG: an AD620
+      instrumentation amplifier, signal-conditioning circuits, and analog bandpass filters. The clean analog
+      signal was digitized by an ATMega328 and transmitted over an RFIDx radio module to a PC, where the EKG
+      was graphed in real time.
+    </p>
+    <p>
+      Results were validated against a BioPac reference device, and we obtained clean EKG readings from both
+      humans and laboratory animals. I used the platform to test QRS-detection algorithms, later built a
+      second design around low-power MAX4091 amplifiers and a PIC MCU, and developed a photoplethysmography
+      device for laboratory animals using a Nonin OEM animal oximeter sensor and an ATMega2560.
+    </p>
+    <div class="tags"><span class="tag">Analog Circuits</span><span class="tag">AD620</span><span class="tag">ATMega</span><span class="tag">Microchip PIC</span><span class="tag">Bioelectronics</span><span class="tag">RF Telemetry</span></div>
+    <div class="gallery">
+      <a href="assets/img/projects/ekg/testing-pcb.jpg"><img src="assets/img/projects/ekg/testing-pcb-thumb.jpg" alt="Testing the EKG acquisition PCB."></a>
+      <a href="assets/img/projects/ekg/first-proto-1.jpg"><img src="assets/img/projects/ekg/first-proto-1-thumb.jpg" alt="First prototype of the EKG acquisition circuit."></a>
+      <a href="assets/img/projects/ekg/first-proto-2.jpg"><img src="assets/img/projects/ekg/first-proto-2-thumb.jpg" alt="Second view of the first EKG prototype build."></a>
+      <a href="assets/img/projects/ekg/proto-2.jpg"><img src="assets/img/projects/ekg/proto-2-thumb.jpg" alt="Second-generation EKG prototype with low-power amplifiers."></a>
+      <a href="assets/img/projects/ekg/tuning-module.jpg"><img src="assets/img/projects/ekg/tuning-module-thumb.jpg" alt="Tuning the analog filter module."></a>
+      <a href="assets/img/projects/ekg/tunning-module-2.jpg"><img src="assets/img/projects/ekg/tunning-module-2-thumb.jpg" alt="Fine-tuning the signal conditioning stage."></a>
+      <a href="assets/img/projects/ekg/first-noisy-signal.jpg"><img src="assets/img/projects/ekg/first-noisy-signal-thumb.jpg" alt="The first raw, noisy EKG signal captured before filtering."></a>
+      <a href="assets/img/projects/ekg/recieveing-testing.jpg"><img src="assets/img/projects/ekg/recieveing-testing-thumb.jpg" alt="Testing wireless reception of the EKG data."></a>
+      <a href="assets/img/projects/ekg/rat-1.jpg"><img src="assets/img/projects/ekg/rat-1-thumb.jpg" alt="EKG measurement session with a laboratory rat."></a>
+      <a href="assets/img/projects/ekg/rat-2.jpg"><img src="assets/img/projects/ekg/rat-2-thumb.jpg" alt="Second EKG measurement session with a laboratory animal."></a>
+      <a href="assets/img/projects/ekg/1743309945782.jpg"><img src="assets/img/projects/ekg/1743309945782-thumb.jpg" alt="EKG system electronics detail."></a>
+      <a href="assets/img/projects/ekg/my-first-laboratory.jpg"><img src="assets/img/projects/ekg/my-first-laboratory-thumb.jpg" alt="The bioelectronics laboratory where the EKG system was developed."></a>
+    </div>
+  </article>
+
+</main>
+
+<!-- ================= CONTACT strip ================= -->
+<section class="contact">
+  <div class="container">
+    <h2>Like what you see?</h2>
+    <p>I'm open to embedded systems roles and contract work in Toronto and across North America.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:juan.narvaez.ca@gmail.com">juan.narvaez.ca@gmail.com</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/jcarlosnarvaez" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-outline" href="assets/resume/Carlos-Narvaez-Resume.pdf" download>Resume PDF</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <img src="assets/img/logo-small.png" alt="Rabbit Systems logo">
+    <span>© 2026 Carlos Narvaez · Rabbit Systems Inc. · Toronto, Canada</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
