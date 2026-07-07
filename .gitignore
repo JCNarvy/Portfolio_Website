@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Source material — kept local only, not published in the repo
+/*.docx
+/Profile.md
+/portfolio_info.txt
+/certifications_links.txt
+/logo.png
+/project_pictures/
+/landscape_pictures/
+/selfies/
+/Teacher_pictures/
+/tecnical_pictures/
+/universities logos/
