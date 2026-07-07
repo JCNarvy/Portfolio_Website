@@ -1,0 +1,174 @@
+Project name:Project Pebble
+
+Company:Moon Trades
+
+Date: May 2026 - Present
+
+Info:Contributing to the development of Pebble, an autonomous lunar mining rover currently under active development. My role focuses on embedded systems engineering, including electronics integration, sensor interfacing, firmware development, and system validation to support reliable operation in a robotic exploration platform.
+
+The project involves rapid prototyping, hardware bring-up, and the integration of multiple subsystems while emphasizing modularity, reliability, and scalable system architecture. As the project is ongoing, additional technical details remain confidential, with further information to be shared upon public release.
+Skills: KiCad, Control, Bill of Materials (BOM) Management
+
+
+Project name:Peltier controller for cooling water
+
+Company:Robbie Insurtech
+
+Date: May 2026 - Present
+
+Info:Designed and developed a proof-of-concept thermoelectric cooling system to evaluate the feasibility of using a Peltier module for active water cooling in a compact forced-air application. The project served as an engineering exploration to investigate thermal management techniques, control strategies, and system efficiency for future embedded cooling solutions.
+
+The project included the design of the complete electronic control system, featuring a custom power stage for driving a high-current Peltier module, embedded firmware for temperature regulation, and a PWM-based control algorithm to optimize cooling performance while minimizing power consumption. The prototype integrated temperature sensors, a water circulation system, heat sinks, and forced-air cooling to characterize the thermal behavior of the system under different operating conditions.
+
+As part of the development process, I designed and assembled the prototype electronics, performed hardware validation, evaluated different control strategies, and collected experimental data to assess cooling efficiency, response time, and overall system performance. The project emphasized rapid prototyping, iterative testing, and engineering validation to determine the practical limitations and potential applications of thermoelectric cooling technology.
+
+This side project strengthened my experience in power electronics, embedded firmware development, thermal system design, sensor integration, PWM motor and power control, experimental testing, and proof-of-concept engineering while demonstrating the ability to quickly transform an idea into a functional prototype through systematic engineering exploration.
+
+Skills: Peltiel cells, Control, Hardware Troublesshooting
+
+
+Project name:Robbie 3.0 electronics upgrading fleet
+
+Company:Robbie Insurtech
+
+Date: May 2026 - Present
+
+Info:
+Contributed to the development and deployment of Robbie 3.0, the latest generation of an autonomous fleet of sensing and control devices for long-term environmental monitoring. The project focused on upgrading the existing platform by integrating a new moisture sensing system while improving the hardware architecture, firmware, and overall system reliability.
+
+My responsibilities included the design and development of new PCBs for the Robbie 3.0 platform, the integration and validation of the new moisture sensor, embedded firmware development, and complete system integration. I also designed and documented custom wire harnesses and interconnects to improve manufacturability, serviceability, and field reliability. Hardware bring-up, PCB validation, debugging, calibration, and field testing were performed to ensure compatibility with the existing fleet while introducing the new hardware revision.
+
+In addition to the electronics development, I implemented AI-assisted engineering workflows to generate and manage SmartBOMs, streamlining component selection, bill of materials management, documentation, and design validation. These workflows accelerated development while maintaining engineering oversight and ensuring design accuracy throughout the project lifecycle.
+
+The project combined embedded firmware development, PCB design, wire harness engineering, analog signal conditioning, hardware validation, system integration, and AI-assisted engineering tools to deliver a more capable, maintainable, and scalable sensing platform for fleet deployment.
+
+Skills: Hardware Troubleshooting, KiCAD, Git, Bill of Materials (BOM) Management
+
+
+Project name:D4D Moisture Sensor Firmware Development and Troubleshooting
+
+Company:Robbie Insurtech
+
+Date: Oct 2025 – May 2026
+
+Info:
+
+Performed firmware troubleshooting, correction, and ongoing development for a third-party D4D material moisture sensor, including both electronic and mechanical aspects of the system. The work involved analyzing existing firmware behavior, identifying functional issues through experimental testing, and implementing corrective updates and firmware enhancements.
+
+Firmware development was performed using embedded C on an STM32 microcontroller, with responsibilities including code refactoring, firmware upgrades, long-term maintainability improvements, and technical documentation. The sensor interface utilized the I²C communication protocol, combined with an analog front-end designed to measure resistance and infer moisture content in solid materials. Troubleshooting activities included validation of I²C transactions, ADC measurements, timing behavior, and signal integrity across the analog measurement stage.
+
+In addition to firmware and electronics, a custom mechanical enclosure was designed using Onshape, focusing on sensor protection, usability, and manufacturability. The enclosure design supported reliable field operation and provided proper integration of the sensor, PCB, and connectors.
+
+Skills: STM32, Embedded C, Git
+
+
+
+Project name:Multi-Module PCB for a Wearable Device Development
+
+Company:Morphace
+
+Date: Oct 2025 – April 2026
+
+Info:
+
+Designed a modular PCB architecture using KiCad and developed C++ firmware to manage sensor acquisition, power control, and inter-module communication for a wearable device.
+
+Skills:KiCAD, Bill of Materials (BOM) Management,Firmware,C++,ESP32 Microcontrollers,Analog Circuit Design
+
+
+
+Project Name:Moisture Sensor Tester and Data Logger for Real-World Conditions
+
+Company:Robbie Insurtech
+
+Date:Aug 2025 – Dec 2025
+
+Info:
+
+Designed and implemented a moisture sensor testing and data-logging platform for real-world operating conditions. The system integrates a Raspberry Pi 5, a custom I²C-based D4D material moisture sensor, and a professional FLIR Systems moisture data logger for comparative validation.
+
+The device was tested at VentureLab in Markham, Ontario, operating under controlled temperature conditions within an environmental chamber to enable repeatable and synchronized measurements across both sensors. Data acquisition and logging were implemented in Python, using multithreading with mutex-based synchronization to coordinate sensor polling, align timestamps, and ensure thread-safe access to shared data structures.
+
+To retrieve measurement data from the FLIR reference instrument, a camera-based capture workflow was implemented, followed by the development of a custom OCR post-processing algorithm to extract numerical readings from captured images. The OCR pipeline was designed and implemented by the team and integrated into the overall data analysis flow.
+
+All measurement data was time-aligned, stored, and post-processed using a Python-based analysis pipeline, including data visualization and comparative analysis, to evaluate sensor accuracy, stability, and correlation against the reference instrument.
+
+Skills:Python (Programming Language),Embedded Linux, Raspberry pi 5, STM32, Multithreading, Semaphore, I2C, Data Analysis
+
+
+
+Project Name:Command Line Interface for embedded C STM32 MCU's
+
+Company:Rabbit Systems
+
+Date:Feb 2025 – Mar 2025
+
+Info:
+Software library to create a Command Line Interface (CLI) for STM32 and embedded C MCU's. The library allows dealing with complete commands and arguments using the communication peripherals of the MCU. The peripherals can be UART, I2C, SPI, CAN, etc. Using conventionally, the communication interfaces you can only send and receive raw data between them. Using this library allows creating professional commands to interchange data in a distributed system.
+
+Skills: Embedded C, STM32,C (Programming Language)
+
+
+
+Project Name:Collision Avoidance System (CAS) for racing car applications.
+
+Company:Rabbit Systems
+
+Date:Apr 2024 – Aug 2024
+
+Info:
+Racing cars require a fast and reliable detection of nearby cars in a race. There are a few time lapses and using just the side mirrors is not reliable. Thus, based on a Bosh device benchmarking, I designed and implemented a prototype for detecting and avoiding collisions in racing cars. The device integrated a Texas Instruments millimetric wave device and a Jetson Nano Orin. Two Texas Instruments radars detected the near cars at the blind spots, and a camera in the bumper detected the cars directly behind the vehicle. The radar boards and the camera were communicated via USB with the Jetson Nano Orin and sent data simultaneously using threads. The prototype was developed for Racing Sciences Inc.
+
+Skills:Radar, Python (Programming Language), C++, mmWave, AWR2944EVM, Multithreading
+
+
+
+Project Name:Firmware to simulate a TRIAXYS wave sensor
+
+Company:Minard
+
+Date:Nov 2023 – Mar 2024
+
+Info:
+I made a firmware repository to simulate the data stream from a Triaxys wave sensor. I developed the simulator in remote collaboration with Ocean Datae Systems in Cancun, Mexico. This software allows the simulation of a complete data frame from a real Triaxys wave sensor to test a datalogger system integrated with the wave sensor. As the real sensor was fixed in a remote buoy, it was difficult to test in situ. The firmware solved this problem by allowing us to test the datalogger remotely.
+
+Skills:C++,ATMega,ESP32
+
+
+Project:Command Line Interface( CLI ) library for microcontrollers.
+
+Company:Minard
+
+Date:Apr 2023 – Oct 2023
+
+Info:
+I made a complete repository to implement a CLI (Command Line Interface) in a C++ based MCU. The library allows the creation of a C++ object to manage the CLI data flow in a 16-bit architecture. The library uses a buffer that separates the command name and command arguments. Then, a superclass called ‘Command’ creates a buffer and a vector with the commands allowed during all the program execution in the MCU. Each command can be linked to an MCU function or process for programming data and retrieving values. The library works with any communication interface such as Serial, I2C, SPI, CAN, Modbus, etc. Each time a new character arrives at the communication interface, the library adds this character to the objects. Once each character from the data arrives, and when two command terminator characters are received, the library separates and manages each data from the command. This library allows the implementation of any command name for any embedded system. You can write commands based on the NMEA and ANSI standards.
+
+Skills:C++,ESP32 Microcontrollers,Atmel AVR
+
+
+
+
+Project Name:Device for measuring temperature, pressure, humidity and wind for astronomical telescopes application.
+
+Company:Universidad Nacional Autónoma de México
+
+Date:May 2019 – Dec 2019
+
+Info:
+I made a device for measuring weather data inside the two-meter telescope domes. The device integrates an Aimotek anemometer, a BeagleBone Black embedded PC, and a relay board. The system uses an embedded Linux Debian distro in the BeagleBone Black to read and program the anemometer measurements. After reading all the information, all data was published into an MQTT server in the main telescope control. For controlling the anemometer a relay board emulates the keyboard user clicking. The device could be started and programmed remotely since the telescope control room. The device was placed in the main telescope housing.
+Skills:Embedded Linux,BeagleBone Black,Python (Programming Language),Printed Circuit Board (PCB) Design
+
+
+
+Project Name:Reliable and low-energy consumption EKG system for veterinary use.
+
+Company:Universidad Autonoma de San Luis Potosi
+
+Date:Nov 2014 – May 2015
+
+Info:
+
+I have experience with EKG circuit designing, testing, and troubleshooting. In 2015, as a Mechatronic engineer, while I was studying for my master's degree in Bioelectronics, I received the task to create a reliable and low-energy consumption EKG system. The task was assigned by my thesis advisor. I made a complete electronic signal acquisition circuit to acquire a human and animal EKG. I used an AD620 instrumentation amplifier, a set of signal conditioning circuits, and analog bandpass filters. The clean analog signal was read and digitalized using an ATMega328. Once the signal was digitalized, I transmitted the EKG samples using an RFIDx radio frequency module. The transmitted data was received into a PC and the data was graphed in real time. The results were validated using a BioPac device. The project was completed, and we were able to obtain clean readings of EKG signals from humans and laboratory animals. I used this project to test QRS detection algorithms. Later, I made another similar design using low-power MAX4091 Amplifiers and a PIC MCU. I also worked on the development of a device to measure the photoplethysmography signal of laboratory animals using a Nonin OEM animal oximeter sensor and an MCU ATMega2560.
+
+Skills:Analog Circuits, Arduino, ATMega, Microchip PIC
