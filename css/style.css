@@ -49,18 +49,20 @@ a:hover { text-decoration: underline; }
 }
 .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); }
 .nav-brand:hover { text-decoration: none; }
-.nav-brand img { height: 36px; width: 36px; object-fit: contain; }
+.nav-brand img { height: 54px; width: 54px; object-fit: contain; }
 .nav-links { display: flex; gap: 4px; margin-left: auto; align-items: center; flex-wrap: wrap; }
 .nav-links a {
   color: var(--muted); font-size: 0.92rem; padding: 6px 10px; border-radius: 6px;
 }
 .nav-links a:hover { color: var(--text); background: var(--accent-soft); text-decoration: none; }
+.nav-links a.btn-primary { color: #ffffff; }
+.nav-links a.btn-primary:hover { color: #ffffff; background: #4fcbf5; }
 .btn {
   display: inline-block; padding: 10px 20px; border-radius: 8px; font-weight: 600;
   font-size: 0.95rem; cursor: pointer; border: 1px solid transparent; transition: all 0.15s;
 }
 .btn:hover { text-decoration: none; }
-.btn-primary { background: var(--accent); color: #04121b; }
+.btn-primary { background: var(--accent); color: #ffffff; }
 .btn-primary:hover { background: #4fcbf5; }
 .btn-outline { border-color: var(--accent-edge); color: var(--accent); }
 .btn-outline:hover { background: var(--accent-soft); }
@@ -161,6 +163,24 @@ a.card:hover { transform: translateY(-4px); border-color: var(--accent-edge); te
 .edu-card { background: var(--card); border: 1px solid var(--card-edge); border-left: 3px solid var(--accent); border-radius: 10px; padding: 20px; }
 .edu-card h3 { font-size: 1.02rem; margin-bottom: 4px; }
 .edu-card p { color: var(--muted); font-size: 0.9rem; }
+.edu-card.with-logo { display: flex; gap: 16px; align-items: center; }
+.logo-chip {
+  flex: 0 0 auto; width: 74px; height: 74px; border-radius: 10px; background: #ffffff;
+  display: flex; align-items: center; justify-content: center; padding: 8px;
+}
+.logo-chip img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.cert-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.cert-links a {
+  font-family: var(--mono); font-size: 0.76rem; color: var(--accent);
+  border: 1px solid var(--accent-edge); border-radius: 5px; padding: 3px 10px;
+}
+.cert-links a:hover { background: var(--accent-soft); text-decoration: none; }
+.tl-logo {
+  float: right; width: 64px; height: 64px; border-radius: 8px; background: #ffffff;
+  padding: 6px; object-fit: contain; margin-left: 14px;
+}
+.project-logo { width: 58px; height: 58px; border-radius: 8px; object-fit: contain; }
+.project-logo.on-white { background: #ffffff; padding: 5px; }
 
 /* ---------- Contact ---------- */
 .contact {
@@ -180,7 +200,7 @@ footer { padding: 34px 0; border-top: 1px solid var(--card-edge); }
   max-width: 1100px; margin: 0 auto; padding: 0 24px;
   display: flex; align-items: center; gap: 14px; color: var(--muted); font-size: 0.85rem; flex-wrap: wrap;
 }
-.footer-inner img { height: 34px; }
+.footer-inner img { height: 48px; }
 .footer-inner .spacer { margin-left: auto; }
 
 /* ---------- Projects page ---------- */
@@ -200,7 +220,7 @@ footer { padding: 34px 0; border-top: 1px solid var(--card-edge); }
   padding: 7px 16px; cursor: pointer; transition: all 0.15s;
 }
 .chip:hover { border-color: var(--accent-edge); color: var(--text); }
-.chip.active { background: var(--accent); border-color: var(--accent); color: #04121b; font-weight: 600; }
+.chip.active { background: var(--accent); border-color: var(--accent); color: #ffffff; font-weight: 600; }
 
 .project {
   background: var(--card); border: 1px solid var(--card-edge); border-radius: 14px;
