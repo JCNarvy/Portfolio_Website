@@ -1,6 +1,26 @@
 // Lightbox, project filters, and scroll reveal for carlosnarvaez portfolio
 
 (function () {
+  // ---------- Random "about" section background ----------
+  var about = document.getElementById("about");
+  if (about) {
+    var aboutBgPool = [
+      "49676449-2087801447909295-2756094017220378624-n.jpg",
+      "67728305-2426694114020025-1856200997504811008-n.jpg",
+      "img-20190519-wa0013.jpg",
+      "img-20190519-wa0014.jpg",
+      "img-20190519-wa0051.jpg",
+      "img-20191202-wa0011.jpg",
+      "img-20200320-wa0018.jpg",
+      "img-20200320-wa0026.jpg",
+      "img-20240930-wa0035.jpg",
+      "img-20240930-wa0036.jpg",
+      "rabbit-drink.jpg"
+    ];
+    var pick = aboutBgPool[Math.floor(Math.random() * aboutBgPool.length)];
+    about.style.setProperty("--about-bg", 'url("../assets/img/landscapes/' + pick + '")');
+  }
+
   // ---------- Lightbox ----------
   const lb = document.createElement("div");
   lb.className = "lightbox";

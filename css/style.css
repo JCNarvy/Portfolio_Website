@@ -107,6 +107,39 @@ section.alt { background: var(--bg-alt); }
 h2.section-title { font-size: 2rem; margin: 6px 0 30px; }
 .lead { color: var(--muted); max-width: 760px; }
 
+/* ---------- Section background photos ---------- */
+#about {
+  --about-bg: url("../assets/img/landscapes/49676449-2087801447909295-2756094017220378624-n.jpg");
+  background:
+    linear-gradient(rgba(7,13,19,0.88), rgba(7,13,19,0.88)),
+    var(--about-bg) center/cover no-repeat;
+}
+#skills {
+  background:
+    linear-gradient(rgba(12,21,31,0.9), rgba(12,21,31,0.9)),
+    url("../assets/img/landscapes/41405994-1923614777661297-3673569254361268224-n.jpg") center/cover no-repeat;
+}
+#experience {
+  background:
+    linear-gradient(rgba(7,13,19,0.9), rgba(7,13,19,0.9)),
+    url("../assets/img/landscapes/47249156-2037495812939859-1110206096343040000-n.jpg") center/cover no-repeat;
+}
+#featured {
+  background:
+    linear-gradient(rgba(12,21,31,0.9), rgba(12,21,31,0.9)),
+    url("../assets/img/landscapes/62882674-2326108750745229-590768636986130432-n.jpg") center/cover no-repeat;
+}
+#teaching {
+  background:
+    linear-gradient(rgba(7,13,19,0.88), rgba(7,13,19,0.88)),
+    url("../assets/img/landscapes/img-20191208-wa0007.jpg") center/cover no-repeat;
+}
+#education {
+  background:
+    linear-gradient(rgba(12,21,31,0.9), rgba(12,21,31,0.9)),
+    url("../assets/img/landscapes/67554432-2426694050686698-3891145988269670400-n.jpg") center/cover no-repeat;
+}
+
 /* ---------- Skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: 34px; }
 .skill-card {
